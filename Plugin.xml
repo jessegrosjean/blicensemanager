@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	id="com.blocks.BLicenseManager"
+	label="License Manager"
+	version="1.0.0"
+	info="Blocks License Manager">
+
+	<requirement bundle="com.blocks.Blocks" version="1.0.0" />
+	<requirement bundle="com.blocks.BUserInterface" version="1.0.0" />
+	
+	<extension-point id="licenses" label="Licenses" />
+	
+	<extension point="com.blocks.BUserInterface.menus" processOrder="2">
+		<menu id="com.blocks.BUserInterface.menus.main.application">
+			<menuitem id="about" action="orderFrontStandardAboutPanel:" target="BLicenseManagerController sharedInstance" />
+			<menuitem title="%Registration..." id="registration" action="showRegistration:" location="group:preferencesGroup" target="BLicenseManagerController sharedInstance" />
+		</menu>
+				
+	</extension>	
+	
+</plugin>

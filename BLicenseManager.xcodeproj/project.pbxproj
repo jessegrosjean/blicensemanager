@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43019A1E0C90976300C67A72 /* Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43019A1B0C90975800C67A72 /* Blocks.framework */; };
+		43019A280C90984F00C67A72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43019A270C90984F00C67A72 /* Localizable.strings */; };
+		43019A2C0C90988200C67A72 /* Plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43019A2B0C90988200C67A72 /* Plugin.xml */; };
+		43019A440C90DB0700C67A72 /* BLicenseManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43019A430C90DB0700C67A72 /* BLicenseManagerController.m */; };
+		43DF8A360CBFA65300E3F8C9 /* BLicenseManagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 43019A420C90DB0700C67A72 /* BLicenseManagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43DF8E230CBFF18200E3F8C9 /* BLicense.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DF8E220CBFF18200E3F8C9 /* BLicense.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43DF8E250CBFF20D00E3F8C9 /* BLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DF8E240CBFF20D00E3F8C9 /* BLicense.m */; };
+		8892A2F40D5CABF10033DD11 /* BLicenseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892A2F20D5CABF10033DD11 /* BLicenseWindow.xib */; };
+		889306950D5B789A002725F2 /* com.blocks.BLicenseManager.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 889306940D5B789A002725F2 /* com.blocks.BLicenseManager.markdown */; };
+		889306970D5B78B4002725F2 /* com.blocks.BLicenseManager.licenses.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 889306960D5B78B4002725F2 /* com.blocks.BLicenseManager.licenses.markdown */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43019A1A0C90975800C67A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43019A160C90975800C67A72 /* Blocks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+		43019A1F0C90976800C67A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43019A160C90975800C67A72 /* Blocks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* BLicenseManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLicenseManager_Prefix.pch; sourceTree = "<group>"; };
+		43019A160C90975800C67A72 /* Blocks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blocks.xcodeproj; path = ../Blocks/Blocks.xcodeproj; sourceTree = SOURCE_ROOT; };
+		43019A230C90983F00C67A72 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43019A2B0C90988200C67A72 /* Plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Plugin.xml; sourceTree = "<group>"; };
+		43019A420C90DB0700C67A72 /* BLicenseManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLicenseManagerController.h; sourceTree = "<group>"; };
+		43019A430C90DB0700C67A72 /* BLicenseManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLicenseManagerController.m; sourceTree = "<group>"; };
+		43DF8E220CBFF18200E3F8C9 /* BLicense.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BLicense.h; sourceTree = SOURCE_ROOT; };
+		43DF8E240CBFF20D00E3F8C9 /* BLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLicense.m; sourceTree = "<group>"; };
+		8892A2F30D5CABF10033DD11 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/BLicenseWindow.xib; sourceTree = "<group>"; };
+		889306940D5B789A002725F2 /* com.blocks.BLicenseManager.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = com.blocks.BLicenseManager.markdown; sourceTree = "<group>"; };
+		889306960D5B78B4002725F2 /* com.blocks.BLicenseManager.licenses.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = com.blocks.BLicenseManager.licenses.markdown; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* BLicenseManager.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLicenseManager.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43019A1E0C90976300C67A72 /* Blocks.framework in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* BLicenseManager */ = {
+			isa = PBXGroup;
+			children = (
+				43019A160C90975800C67A72 /* Blocks.xcodeproj */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = BLicenseManager;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				43019A270C90984F00C67A72 /* Localizable.strings */,
+				43019A2B0C90988200C67A72 /* Plugin.xml */,
+				889306940D5B789A002725F2 /* com.blocks.BLicenseManager.markdown */,
+				889306960D5B78B4002725F2 /* com.blocks.BLicenseManager.licenses.markdown */,
+				8892A2F20D5CABF10033DD11 /* BLicenseWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43019A420C90DB0700C67A72 /* BLicenseManagerController.h */,
+				43019A430C90DB0700C67A72 /* BLicenseManagerController.m */,
+				43DF8E220CBFF18200E3F8C9 /* BLicense.h */,
+				43DF8E240CBFF20D00E3F8C9 /* BLicense.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* BLicenseManager.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* BLicenseManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		43019A170C90975800C67A72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43019A1B0C90975800C67A72 /* Blocks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43DF8A330CBFA63F00E3F8C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DF8A360CBFA65300E3F8C9 /* BLicenseManagerController.h in Headers */,
+				43DF8E230CBFF18200E3F8C9 /* BLicense.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* BLicenseManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BLicenseManager" */;
+			buildPhases = (
+				43019A290C90985900C67A72 /* Run genstrings Script */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				43DF8A330CBFA63F00E3F8C9 /* Headers */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43019A200C90976800C67A72 /* PBXTargetDependency */,
+			);
+			name = BLicenseManager;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = BLicenseManager;
+			productReference = 8D5B49B6048680CD000E48DA /* BLicenseManager.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BLicenseManager" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* BLicenseManager */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 43019A170C90975800C67A72 /* Products */;
+					ProjectRef = 43019A160C90975800C67A72 /* Blocks.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* BLicenseManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		43019A1B0C90975800C67A72 /* Blocks.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Blocks.framework;
+			remoteRef = 43019A1A0C90975800C67A72 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				43019A280C90984F00C67A72 /* Localizable.strings in Resources */,
+				43019A2C0C90988200C67A72 /* Plugin.xml in Resources */,
+				889306950D5B789A002725F2 /* com.blocks.BLicenseManager.markdown in Resources */,
+				889306970D5B78B4002725F2 /* com.blocks.BLicenseManager.licenses.markdown in Resources */,
+				8892A2F40D5CABF10033DD11 /* BLicenseWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43019A290C90985900C67A72 /* Run genstrings Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run genstrings Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != 'Release' ]; then\n\texit\nfi\n\ngenstrings -s BLocalizedString -o English.lproj/ *.[mch] */*.[mch]\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43019A440C90DB0700C67A72 /* BLicenseManagerController.m in Sources */,
+				43DF8E250CBFF20D00E3F8C9 /* BLicense.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43019A200C90976800C67A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blocks;
+			targetProxy = 43019A1F0C90976800C67A72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43019A270C90984F00C67A72 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43019A230C90983F00C67A72 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8892A2F20D5CABF10033DD11 /* BLicenseWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8892A2F30D5CABF10033DD11 /* English */,
+			);
+			name = BLicenseWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BLicenseManager_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = BLicenseManager;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BLicenseManager_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = BLicenseManager;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BLicenseManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BLicenseManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

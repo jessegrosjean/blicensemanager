@@ -1,0 +1,1 @@
+Use this extension point to declare new BLicenses that you can later check the status of.
