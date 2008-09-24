@@ -260,7 +260,7 @@
     NSMutableData * data = [NSMutableData data];
     char inbuf[512];
     NSUInteger inlen;
-#warning 64BIT: Inspect use of sizeof
+
     while ((inlen = BIO_read(mem, inbuf, sizeof(inbuf))) > 0)
         [data appendBytes: inbuf length: inlen];
 
