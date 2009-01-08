@@ -116,15 +116,23 @@
 
 - (NSMutableString *)formattedLicenseKey:(NSString *)aLicenseKey {
 	NSMutableString *licenseKey = [aLicenseKey mutableCopy];
-	NSCharacterSet *whitespaceAndNewlineCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+	NSMutableCharacterSet *alphanumericCharacterSet = [NSMutableCharacterSet alphanumericCharacterSet];
+	
+	[alphanumericCharacterSet addCharactersInString:@"+=/"];
+	
+//	NSCharacterSet *whitespaceAndNewlineCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 	NSInteger i = [licenseKey length] - 1;
 	
 	while (i >= 0) {
 		unichar c = [licenseKey characterAtIndex:i];
 		
-		if ([whitespaceAndNewlineCharacterSet characterIsMember:c]) {
+		if (![alphanumericCharacterSet characterIsMember:c]) {
 			[licenseKey deleteCharactersInRange:NSMakeRange(i, 1)];
 		}
+		
+//		if ([whitespaceAndNewlineCharacterSet characterIsMember:c]) {
+//			[licenseKey deleteCharactersInRange:NSMakeRange(i, 1)];
+//		}
 		
 		i--;
 	}
