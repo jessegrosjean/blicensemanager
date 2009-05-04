@@ -82,7 +82,7 @@
 @synthesize numberOfTrialDays;
 
 - (NSInteger)trialDaysRemaining {
-	return ceil([[self trialExpirationDate] timeIntervalSinceDate:[NSDate date]] / 24 / 60 / 60);
+	return (NSInteger) ceil([[self trialExpirationDate] timeIntervalSinceDate:[NSDate date]] / 24 / 60 / 60);
 }
 
 #pragma mark License Owner
@@ -288,7 +288,7 @@
 
 - (NSData *)decrypt:(NSData *)cipherTextData {
     unsigned char *outbuf;
-    NSUInteger outlen, inlen;
+    NSInteger outlen, inlen;
     inlen = [cipherTextData length];
     unsigned char *input = (unsigned char *)[cipherTextData bytes];
     
